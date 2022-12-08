@@ -11,7 +11,7 @@ body, html {
 }
 
 .bgimg {
-  background-image: url('https://i8,ae/ofqWS');
+  background-image: url('IMG_9444_1.png');
   height: 100%;
   background-position: center;
   background-size: cover;
@@ -44,10 +44,11 @@ body, html {
   text-align: center;
 }
 
-hr {
+hr, .cube {
   margin: auto;
   width: 40%;
 }
+
 a {
  color: white;
 }
@@ -63,10 +64,10 @@ a:visited {
 
 <div class="bgimg">
   <div class="topleft">
-    <p>Caping Cube Season 3</p>
+    <p>Caping Cube - Season 3 </p>
   </div>
   <div class="middle">
-    <h1>COMING SOON</h1>
+    <h1 class="cube">COMING SOON</h1>
     <hr>
     <p id="demo" style="font-size:30px"></p>
   </div>
@@ -77,7 +78,7 @@ a:visited {
 
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("Dec 13, 22 00:00:00").getTime();
+var countDownDate = new Date("Dec 13, 2022 00:00:00").getTime();
 
 // Update the count down every 1 second
 var countdownfunction = setInterval(function() {
@@ -101,7 +102,8 @@ var countdownfunction = setInterval(function() {
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(countdownfunction);
-    document.getElementById("demo").innerHTML = "The New Season Of CapingCube Is Now Here.";
+    document.getElementById("demo").innerHTML = "The New Season Of Caping Cube is now live Join The <a href='https://dsc.gg/CapingCube'>Discord</a> To Talk about the new season";
+    document.getElementById(".cube").innerHTML = "CapingCube";
   }
 }, 1000);
 </script>
